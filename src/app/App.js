@@ -37,6 +37,11 @@ class Rows extends Component {
 }
 
 class App extends Component{
+
+    componentDidMount(){
+        const res = fetch('http://openlibrary.org/recentchanges.json?limit=10')
+    }
+
     render () {
         console.log(this.props.data);
         
